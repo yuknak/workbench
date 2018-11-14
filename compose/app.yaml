@@ -38,7 +38,6 @@ services:
     env_file:
       - ../config/barong.env
     volumes:
-      - barong-assets:/home/app/public
       - ../config/barong:/opt/barong/config:ro
       - ../app/barong/app:/home/app/app
       - ../app/barong/lib:/home/app/lib
@@ -53,7 +52,6 @@ services:
       - proxy
     volumes:
      - peatio-assets:/usr/share/nginx/html/assets/peatio:ro
-     - barong-assets:/usr/share/nginx/html/assets/barong:ro
     labels:
       traefik.enable: true
       traefik.frontend.rule: 'Host: www.wb.local; PathPrefix: /assets'
@@ -61,4 +59,3 @@ services:
 
 volumes:
   peatio-assets:
-  barong-assets:
