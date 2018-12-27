@@ -1,7 +1,3 @@
-[submodule "peatio"]
-	path = app/peatio
-	url = https://github.com/rubykube/peatio.git
-	branch = "1-9-stable"
 [submodule "barong"]
 	path = app/barong
 	url = https://github.com/rubykube/barong.git
@@ -18,3 +14,7 @@
 	path = test/toolbox
 	url = https://github.com/rubykube/toolbox.git
 	branch = "master"
+[submodule "app/peatio"]
+	path = app/peatio
+	url = https://github.com/yuknak/peatio.git
+        branch = "1-9-stable"
